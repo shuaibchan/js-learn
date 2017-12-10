@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Javascript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h1 id="heading">Learning JS</h1>
+		
+		<p>batzishu</p>
+	</div>
+
+<div class="container">
+	<button onclick="changeText()">click me</button>
+	<button onmouseout="clearDate()" onmouseover ="showDate()">Tunjukkan Tarikh</button>
+	<h1 id="time"></h1>
+</div>
+
+<script>
+	function changeText(id){
+		var heading = document.getElementById('heading');
+		heading.innerHTML = 'youclick'
+	}
+
+	function showDate(){
+		var time = document.getElementById('time');
+		time.innerHTML = Date()
+	}
+
+	function clearDate(){
+		var time = document.getElementById('time');
+		time.innerHTML = ''
+	}
+/*function doClick(){
+	alert('you clicked')
+}*/
+
+	//variable --> letters, number, underscore, $
+	//begin with letter
+	//_$
+	//Case sensitive
+
+/*	var myTest =34;
+alert('My favourite number is: '+myTest);
+	var MyTest;
+
+	var my_test*/
+/*
+	var colors = ['red','blue','green',1,3,5];
+	alert(colors.sort())
+	*/
+/*
+for(var i=0; i < 5; i++){
+console.log(i);
+}*/
+/*
+var i = 0;
+while(i<10){
+	console.log(i);
+	i++;
+}*/
+
+var number =[22,34,54,76,42,12,443];
+
+/*numbers.forEach(function(number){
+	console.log(number)
+})*/
+/*for(var i = 0; i < number.length; i++){
+		console.log(number[i]);
+}*/
+
+/*var fruit = 'apple';
+
+switch(fruit){
+	case "banana":
+		alert('i lv 5 banana');
+		break;
+	case "pisang":
+		alert('i lv 6banana');
+		break;
+	case "kasut":
+		alert('i lv 4banana');
+		break;
+	default:
+		alert('i lv 5banana');
+		break;
+}*/
+
+/*var person = {
+	firstName: 'shuaib',
+	lastName: 'Chantando',
+	age: 25,
+	children:['shhhh','mar'],
+	address:{
+		street: 'sandakan sabah',
+		city: 'sabah ba',
+		state: 'Malaysiaaal'
+	},
+	fullName: function(){
+		return this.firstName+" "+this.lastName;
+	}
+}
+console.log(person.fullName())
+/*for(i=0; i<person.children.length; i++){
+	console.log(person.children[i])
+}*/
+
+/*var apple = new Object();
+apple.color = 'red';
+apple.shape = 'round';
+
+apple.describe= function(){
+	return 'an apple is ' +this.color+ 'and the shape is '+this.shape;
+}
+console.log(apple.describe())*/
+/*
+function Fruit(name, color, shape){
+	this.name = name
+	this.color = color
+	this.shape = shape
+
+	this.describe = function(){
+		return 'A' +this.name+ 'is the color' +this.color+ 'is the color' +this.shape+ 'is the shape' 
+	}
+}
+
+var apple = new Fruit('apple', 'red', 'round')
+var mangga = new Fruit('apple', 'red', 'round')
+var pisang = new Fruit('apple', 'red', 'round')
+console.log(apple.describe())*/
+/*var users = [
+{
+	name: 'John r',
+	age: 351
+},
+{
+	name: 'John f',
+	age: 351
+},
+{
+	name: 'John g',
+	age: 353
+},
+];*/
+
+
+
+
+
+console.log(users[0].name)
+
+</script>
+
+</body>
